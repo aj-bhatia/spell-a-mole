@@ -23,6 +23,33 @@ const hardButton = document.querySelector('#hard_button')
 //    start_game_button.style.color = "white";
 //});
 
+let difficulty = "easy";
+
+easyButton.addEventListener("click",() =>{
+    difficulty = "easy";
+    easyButton.style.borderColor = "blue";
+    mediumButton.style.borderColor = "white";
+    hardButton.style.vColor = "white";
+})
+
+mediumButton.addEventListener("click",() =>{
+    difficulty = "medium";
+    easyButton.style.borderColor = "white";
+    mediumButton.style.borderColor = "blue";
+    hardButton.style.borderColor = "white";
+
+})
+
+hardButton.addEventListener("click",() =>{
+    difficulty = "hard";
+    easyButton.style.borderColor = "white";
+    mediumButton.style.borderColor = "white";
+    hardButton.style.borderColor = "blue";
+})
+
+
+
+
 
 start_game_button.addEventListener("click",() =>{
 

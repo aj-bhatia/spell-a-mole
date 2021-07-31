@@ -54,7 +54,7 @@ let moleTimeOut;
 let gameTimeOut;
 let score;
 let time;
-let difficulty = 'easy';
+//let difficulty = 'easy';
 let wordCheck;
 
 //startButton.addEventListener('click', startGame);
