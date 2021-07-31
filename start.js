@@ -13,15 +13,15 @@ const hardButton = document.querySelector('#hard_button')
 
 
 //testing hover capabilites through dom, can just do csss instead
-start_game_button.addEventListener("mouseenter",() =>{
-    start_game_button.style.backgroundColor = "Yellow";
-    start_game_button.style.color = "#ff6b63";
-});
+//start_game_button.addEventListener("mouseenter",() =>{
+//    start_game_button.style.backgroundColor = "Yellow";
+//    start_game_button.style.color = "#ff6b63";
+//});
 
-start_game_button.addEventListener("mouseleave",() =>{
-    start_game_button.style.backgroundColor = "#ff6b63";
-    start_game_button.style.color = "white";
-});
+//start_game_button.addEventListener("mouseleave",() =>{
+//    start_game_button.style.backgroundColor = "#ff6b63";
+//    start_game_button.style.color = "white";
+//});
 
 
 start_game_button.addEventListener("click",() =>{

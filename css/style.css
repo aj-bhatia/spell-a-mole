@@ -1,5 +1,10 @@
+body {
+    background: url("../assets/tileset.png") repeat;
+}
+
 h1 {
-    color: red;
+    color: #5b2f13;
+    
 }
 
 #container {
@@ -65,25 +70,37 @@ h1 {
     font-size:  30px;
     font-weight: bold;
     text-transform: uppercase;
-    color:  white;
-    background-color: #ff6b63;
-    border-color: #ff6b63;
+    color:  #ffebcd;
+    background-color: #cdc673;
+    border-color: #cdc673;
     position: absolute;
     left:  40vw;
     top:  35vh;
 }
+
+#start_button:hover {
+    background-color: #1f5514;
+    color: #cdc673;
+}
+
 #how_toButton{
     height: 5vw;
     width: 15vw;
     font-size:  30px;
     font-weight: bold;
     text-transform: uppercase;
-    color:  white;
-    background-color: #ff6b63;
-    border-color: #ff6b63;
+    color:  #ffebcd;
+    background-color: #cdc673;
+    border-color: #cdc673;
     position: absolute;
     left:  42.5vw;
     top:  56vh;
+}
+
+#how_toButton:hover{
+    background-color: #1f5514;
+    border-color: #1f5514;
+    color: #cdc673;
 }
 
 .div_head{
@@ -97,15 +114,15 @@ h1 {
     font-size:  30px;
     font-weight: bold;
     text-transform: uppercase;
-    color:  white;
-    background-color: #ff6b63;
-    border-color: #ff6b63;
-
+    color:  #ffebcd;
+    background-color: #cdc673;
+    border-color: #cdc673;
 }
 
 .reset_button:hover{
-    background-color: yellow;
-    color: #ff6b63;
+    background-color: #1f5514;
+    border-color: #1f5514;
+    color: #cdc673;
 }
 
 #easy_button{
@@ -114,12 +131,18 @@ h1 {
 	font-size:  30px;
 	font-weight: bold;
 	text-transform: uppercase;
-	color:  white;
-	background-color: #ff6b63;
-	border-color: #ff6b63;
+	color:  #ffebcd;
+	background-color: #cdc673;
+	border-color: #cdc673;
 	position: absolute;
-	left:  30;
+	left:  25vw;
 	top:  70vh;
+}
+
+#easy_button:hover{
+    background-color: #1f5514;
+    border-color: #1f5514;
+    color: #cdc673;
 }
 
 #medium_button{
@@ -128,12 +151,18 @@ h1 {
 	font-size:  30px;
 	font-weight: bold;
 	text-transform: uppercase;
-	color:  white;
-	background-color: #ff6b63;
-	border-color: #ff6b63;
+	color:  #ffebcd;
+	background-color: #cdc673;
+	border-color: #cdc673;
 	position: absolute;
 	left:  42.5vw;
 	top:  70vh;
+}
+
+#medium_button:hover{
+    background-color: #1f5514;
+    border-color: #1f5514;
+    color: #cdc673;
 }
 
 #hard_button{
@@ -142,10 +171,16 @@ h1 {
 	font-size:  30px;
 	font-weight: bold;
 	text-transform: uppercase;
-	color:  white;
-	background-color: #ff6b63;
-	border-color: #ff6b63;
+	color:  #ffebcd;
+	background-color: #cdc673;
+	border-color: #cdc673;
+    border-radius: 20%;
 	position: absolute;
 	left:  60vw;
 	top:  70vh;
+}
+#hard_button:hover{
+    background-color: #1f5514;
+    border-color: #1f5514;
+    color: #cdc673;
 }
