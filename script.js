@@ -147,7 +147,7 @@ timeUp = false;
  gameTimeOut;
  score = 0;
 time = 10; //10s game
-moles.forEach(mole => mole.addEventListener('click', whack));
+//moles.forEach(mole => mole.addEventListener('click', whack));
 
     createScore();
     createTimer();
