@@ -126,7 +126,7 @@ function startGame() {
         pre_container = document.createElement("div");
         container.classList.add("pre_container");
         document.body.appendChild(pre_container);
-        
+
         //Creating new scores
         container = document.createElement("div");
         container.setAttribute('id','container');
@@ -197,6 +197,10 @@ start_game_area.disabled = "false";
 start_game_area.style.display = "block";
 how_to_play.disabled = "false";
 how_to_play.style.display = "block";
+
+easyButton.style.display = "block";
+mediumButton.style.display = "block";
+hardButton.style.display = "block";
 });
 }
 
@@ -219,29 +223,29 @@ function countDown(){
 
 function chooseWord(diff){
     if (diff == 'easy') {
-        li = ['all', 'and', 'act', 'ago', 'add', 'aid', 'age', 'tag', 'cat', 'dog', 'cap', 'car', 'rag', 'leg', 'arm', 'bed', 'red', 
-        'pan', 'fat', 'rat', 'bat', 'wit', 'pig', 'bee', 'web', 'rug', 'mug', 'nod', 'hen', 'mad', 'pad', 'dad', 'mom', 'vet', 'wet', 
-        'pat', 'pay', 'fit', 'log', 'run', 'hit', 'rad', 'man', 'fed', 'led', 'fun', 'ton', 'pen', 'rod', 'mod', 'fall', 'pond', 'duck', 
-        'long', 'kite', 'girl', 'male', 'tail', 'wall', 'tall', 'mall', 'star', 'leaf', 'book', 'bird', 'took', 'toll', 'mole', 'rail', 
-        'bell', 'well', 'drum', 'plum', 'hand', 'feet', 'pace', 'made', 'mage', 'wage', 'nail', 'mama', 'papa', 'wack', 'malt', 'navy', 
+        li = ['all', 'and', 'act', 'ago', 'add', 'aid', 'age', 'tag', 'cat', 'dog', 'cap', 'car', 'rag', 'leg', 'arm', 'bed', 'red',
+        'pan', 'fat', 'rat', 'bat', 'wit', 'pig', 'bee', 'web', 'rug', 'mug', 'nod', 'hen', 'mad', 'pad', 'dad', 'mom', 'vet', 'wet',
+        'pat', 'pay', 'fit', 'log', 'run', 'hit', 'rad', 'man', 'fed', 'led', 'fun', 'ton', 'pen', 'rod', 'mod', 'fall', 'pond', 'duck',
+        'long', 'kite', 'girl', 'male', 'tail', 'wall', 'tall', 'mall', 'star', 'leaf', 'book', 'bird', 'took', 'toll', 'mole', 'rail',
+        'bell', 'well', 'drum', 'plum', 'hand', 'feet', 'pace', 'made', 'mage', 'wage', 'nail', 'mama', 'papa', 'wack', 'malt', 'navy',
         'near', 'neat', 'need', 'pass', 'part', 'ruby', 'runt', 'rank', 'raft', 'quiz', 'quit', 'wilt', 'tilt', 'ramp', 'rage'];
     } else if (diff == 'medium') {
-        li =  ['fall', 'pond', 'duck', 'long', 'kite', 'girl', 'male', 'tail', 'wall', 'tall', 'mall', 'star', 'leaf', 'book', 'bird', 
-        'took', 'toll', 'mole', 'rail', 'bell', 'well', 'drum', 'plum', 'hand', 'feet', 'pace', 'made', 'mage', 'wage', 'nail', 'mama', 
-        'papa', 'wack', 'malt', 'navy', 'near', 'neat', 'need', 'pass', 'part', 'ruby', 'runt', 'rank', 'raft', 'quiz', 'quit', 'wilt', 
-        'tilt', 'ramp', 'rage', 'address', 'earth', 'exercise', 'experience', 'experiment', 'notice', 'naughty', 'business', 'favorite', 
-        'actually', 'group', 'guard', 'guide', 'particular', 'surprise', 'suppose', 'strength', 'fruit', 'occasionally', 'straight', 'recent', 
-        'questions', 'quarter', 'purpose', 'promise', 'probably', 'pressure', 'length', 'library', 'difficult', 'important', 'imagine', 'possible', 
-        'potatoes', 'woman', 'throughout', 'thought', 'through', 'various', 'therefore', 'decide', 'describe', 'complete', 'circle', 'century', 
+        li =  ['fall', 'pond', 'duck', 'long', 'kite', 'girl', 'male', 'tail', 'wall', 'tall', 'mall', 'star', 'leaf', 'book', 'bird',
+        'took', 'toll', 'mole', 'rail', 'bell', 'well', 'drum', 'plum', 'hand', 'feet', 'pace', 'made', 'mage', 'wage', 'nail', 'mama',
+        'papa', 'wack', 'malt', 'navy', 'near', 'neat', 'need', 'pass', 'part', 'ruby', 'runt', 'rank', 'raft', 'quiz', 'quit', 'wilt',
+        'tilt', 'ramp', 'rage', 'address', 'earth', 'exercise', 'experience', 'experiment', 'notice', 'naughty', 'business', 'favorite',
+        'actually', 'group', 'guard', 'guide', 'particular', 'surprise', 'suppose', 'strength', 'fruit', 'occasionally', 'straight', 'recent',
+        'questions', 'quarter', 'purpose', 'promise', 'probably', 'pressure', 'length', 'library', 'difficult', 'important', 'imagine', 'possible',
+        'potatoes', 'woman', 'throughout', 'thought', 'through', 'various', 'therefore', 'decide', 'describe', 'complete', 'circle', 'century',
         'centre', 'busy', 'worried', 'decision', 'incriminated'];
     } else if (diff == 'hard') {
-        li =  ['address', 'earth', 'exercise', 'experience', 'experiment', 'notice', 'naughty', 'business', 'favorite', 'actually', 'group', 'guard', 
-        'guide', 'particular', 'surprise', 'suppose', 'strength', 'fruit', 'occasionally', 'straight', 'recent', 'questions', 'quarter', 'purpose', 'promise', 
-        'probably', 'pressure', 'length', 'library', 'difficult', 'important', 'imagine', 'possible', 'potatoes', 'woman', 'throughout', 'thought', 'through', 
-        'various', 'therefore', 'decide', 'describe', 'complete', 'circle', 'century', 'centre', 'busy', 'worried', 'decision', 'incriminated', 'depth', 'forgetting', 
-        'entire', 'horizon', 'fright', 'muscle', 'environment', 'controversy', 'awkward', 'vulnerable', 'deterrent', 'cameos', 'malicious', 'obscure', 'propeller', 
-        'surmise', 'annoyance', 'vessel', 'insufficient', 'protein', 'unbelievable', 'unduly', 'applicant', 'machinery', 'laboratory', 'escalator', 'embargo', 'outrageous', 
-        'honorary', 'minimize', 'contrary', 'vertigo', 'malady', 'rectangular', 'privilege', 'shuddering', 'precipitate', 'internally', 'perceived', 'mercenary', 'arrangement', 
+        li =  ['address', 'earth', 'exercise', 'experience', 'experiment', 'notice', 'naughty', 'business', 'favorite', 'actually', 'group', 'guard',
+        'guide', 'particular', 'surprise', 'suppose', 'strength', 'fruit', 'occasionally', 'straight', 'recent', 'questions', 'quarter', 'purpose', 'promise',
+        'probably', 'pressure', 'length', 'library', 'difficult', 'important', 'imagine', 'possible', 'potatoes', 'woman', 'throughout', 'thought', 'through',
+        'various', 'therefore', 'decide', 'describe', 'complete', 'circle', 'century', 'centre', 'busy', 'worried', 'decision', 'incriminated', 'depth', 'forgetting',
+        'entire', 'horizon', 'fright', 'muscle', 'environment', 'controversy', 'awkward', 'vulnerable', 'deterrent', 'cameos', 'malicious', 'obscure', 'propeller',
+        'surmise', 'annoyance', 'vessel', 'insufficient', 'protein', 'unbelievable', 'unduly', 'applicant', 'machinery', 'laboratory', 'escalator', 'embargo', 'outrageous',
+        'honorary', 'minimize', 'contrary', 'vertigo', 'malady', 'rectangular', 'privilege', 'shuddering', 'precipitate', 'internally', 'perceived', 'mercenary', 'arrangement',
         'vivacious', 'vacillate', 'phenomenon', 'potpourri', 'caricature', 'surveillance', 'metamorphosis', 'omnipotent', 'unenforceable'];
     }
 
