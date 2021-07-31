@@ -27,7 +27,7 @@ let difficulty = "easy";
 
 easyButton.addEventListener("click",() =>{
     difficulty = "easy";
-    easyButton.style.borderColor = "blue";
+    easyButton.style.borderColor = "brown";
     mediumButton.style.borderColor = "white";
     hardButton.style.vColor = "white";
 })
@@ -35,7 +35,7 @@ easyButton.addEventListener("click",() =>{
 mediumButton.addEventListener("click",() =>{
     difficulty = "medium";
     easyButton.style.borderColor = "white";
-    mediumButton.style.borderColor = "blue";
+    mediumButton.style.borderColor = "brown";
     hardButton.style.borderColor = "white";
 
 })
@@ -44,7 +44,7 @@ hardButton.addEventListener("click",() =>{
     difficulty = "hard";
     easyButton.style.borderColor = "white";
     mediumButton.style.borderColor = "white";
-    hardButton.style.borderColor = "blue";
+    hardButton.style.borderColor = "brown";
 })
 
 

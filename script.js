@@ -109,6 +109,8 @@ function molesPoppingUp() {
     moleTimeOut = setTimeout(() => {
         hole.classList.remove('up');
         word.textContent = '';
+        var inputString = document.querySelector('INPUT');
+        inputString.value = '';
         if (!timeUp) {
             molesPoppingUp();
         }

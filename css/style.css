@@ -4,7 +4,6 @@ body {
 
 h1 {
     color: #5b2f13;
-    
 }
 
 #container {
@@ -73,6 +72,7 @@ h1 {
     color:  #ffebcd;
     background-color: #cdc673;
     border-color: #cdc673;
+    border-radius: 20%;
     position: absolute;
     left:  40vw;
     top:  35vh;
@@ -80,6 +80,7 @@ h1 {
 
 #start_button:hover {
     background-color: #1f5514;
+    border-color: #1f5514;
     color: #cdc673;
 }
 
@@ -92,6 +93,7 @@ h1 {
     color:  #ffebcd;
     background-color: #cdc673;
     border-color: #cdc673;
+    border-radius: 10%;
     position: absolute;
     left:  42.5vw;
     top:  56vh;
@@ -108,6 +110,7 @@ h1 {
     left:  40vw;
     top:  45vh;
 }
+
 .reset_button{
     height: 10vw;
     width: 20vw;
@@ -117,6 +120,7 @@ h1 {
     color:  #ffebcd;
     background-color: #cdc673;
     border-color: #cdc673;
+    border-radius: 20%;
 }
 
 .reset_button:hover{
@@ -134,6 +138,7 @@ h1 {
 	color:  #ffebcd;
 	background-color: #cdc673;
 	border-color: #cdc673;
+    border-radius: 20%;
 	position: absolute;
 	left:  25vw;
 	top:  70vh;
@@ -154,6 +159,7 @@ h1 {
 	color:  #ffebcd;
 	background-color: #cdc673;
 	border-color: #cdc673;
+    border-radius: 20%;
 	position: absolute;
 	left:  42.5vw;
 	top:  70vh;
