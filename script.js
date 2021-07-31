@@ -1,4 +1,4 @@
-let scoreboard = document.querySelector('.scoreboard');
+/*let scoreboard = document.querySelector('.scoreboard');
 let timer = document.querySelector('.timer');
 let startButton = document.querySelector('.start');
 let container = document.querySelector('#container');
@@ -15,6 +15,50 @@ let time = 10; //10s game
 
 startButton.addEventListener('click', startGame);
 moles.forEach(mole => mole.addEventListener('click', whack));
+*/
+
+var scoreboard;
+var timer;
+
+
+
+
+
+let startButton = document.querySelector('.start');
+let container = document.querySelector('#container');
+let pre_container = document.querySelector('.pre_container');
+let mainBody = document.querySelector('.body');
+
+function createScore(){
+    scoreboard = document.createElement('h2');
+    scoreboard.classList.add("scoreboard");
+    scoreboard.textContent = "Score:";
+    pre_container.appendChild(scoreboard);
+}
+
+
+function createTimer(){
+    timer = document.createElement('h2');
+    timer.classList.add("timer");
+    timer.textContent = "Timer:";
+    pre_container.appendChild(timer);
+}
+
+
+
+let holes;
+let moles;
+let lastHole;
+let timeUp;
+let moleTimeOut;
+let gameTimeOut;
+let score;
+let time;
+let difficulty = 'easy';
+let wordCheck;
+
+//startButton.addEventListener('click', startGame);
+
 
 function createHoles(num){
     for(let i=0; i<num; i++){
@@ -26,6 +70,7 @@ function createHoles(num){
         mole.classList.add('mole');
         word.classList.add('word');
         hole.appendChild(mole);
+        //hole.appendChild(word);
         container.appendChild(hole);
         container.appendChild(word);
     }
@@ -55,17 +100,57 @@ function molesPoppingUp() {
     let hole = setRandomHole();
     let word = hole.nextElementSibling;
     hole.classList.add('up');
+    //word.classList.add('up');
     word.textContent = chooseWord(difficulty)
+    console.log("this is word.textContent:" , word.textContent);
+    wordCheck = word.textContent;
+    console.log("this is wordCheck:" , wordCheck);
     console.log(word.textContent)
     moleTimeOut = setTimeout(() => {
         hole.classList.remove('up');
+        word.textContent = '';
         if (!timeUp) {
             molesPoppingUp();
         }
     }, time);
+
 }
 
 function startGame() {
+
+        //Removing previous game state (regardless of whether there was a gamestate running prior)
+        container.remove();
+        pre_container.remove();
+
+        //Creating new game state
+        pre_container = document.createElement("div");
+        container.classList.add("pre_container");
+        document.body.appendChild(pre_container);
+        
+        //Creating new scores
+        container = document.createElement("div");
+        container.setAttribute('id','container');
+        document.body.appendChild(container);
+
+
+    createHoles(6);
+    var inp = document.createElement("INPUT");
+    //inp.setAttribute("value", "Hello World!");
+    container.appendChild(inp);
+
+holes = document.querySelectorAll('.hole');
+moles = document.querySelectorAll('.mole');
+words = document.querySelectorAll('.word');
+ lastHole;
+timeUp = false;
+ moleTimeOut;
+ gameTimeOut;
+ score = 0;
+time = 10; //10s game
+moles.forEach(mole => mole.addEventListener('click', whack));
+
+    createScore();
+    createTimer();
     if (moleTimeOut){
         clearTimeout(moleTimeOut);
     }
@@ -78,10 +163,41 @@ function startGame() {
     countDown();
     molesPoppingUp();
     gameTimeOut = setTimeout(() => endGame(), 10000);
+    inp.addEventListener('keyup', () => {
+        //console.log("TEST NOW");
+        var userInp = inp.value;
+        console.log("This is user input: " , userInp);
+
+        if (userInp == wordCheck){
+            moles.forEach(mole => mole.parentNode.classList.remove('up'));
+            words.forEach(word => word.textContent = '');
+            score++;
+            scoreboard.textContent = `Score: ${score}`;
+            inp.value = "";
+        }
+    })
 }
 
 function endGame() {
     timeUp = true;
+    let reset_button = document.createElement("button");
+    reset_button.textContent = "back to Main Menu";
+    reset_button.classList.add("reset_button");
+    pre_container.appendChild(reset_button);
+
+    //give reset button functionality
+    //Remove the newly created div (game scene) and remove itself
+    //Bring back the original start game button and its div
+    reset_button.addEventListener("click",()=>{
+    console.log("clicked reset button");
+    container.remove();
+    pre_container.remove();
+    reset_button.remove();
+start_game_area.disabled = "false";
+start_game_area.style.display = "block";
+how_to_play.disabled = "false";
+how_to_play.style.display = "block";
+});
 }
 
 function whack(e){

@@ -54,3 +54,56 @@ h1 {
 .hole.up .mole{
     top:0;
 }
+
+.word.up {
+    display:none;
+}
+
+#start_button{
+    height: 10vw;
+    width: 20vw;
+    font-size:  30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:  white;
+    background-color: #ff6b63;
+    border-color: #ff6b63;
+    position: absolute;
+    left:  40vw;
+    top:  35vh;
+}
+#how_toButton{
+    height: 5vw;
+    width: 15vw;
+    font-size:  30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:  white;
+    background-color: #ff6b63;
+    border-color: #ff6b63;
+    position: absolute;
+    left:  42.5vw;
+    top:  56vh;
+}
+
+.div_head{
+    position: absolute;
+    left:  40vw;
+    top:  45vh;
+}
+.reset_button{
+    height: 10vw;
+    width: 20vw;
+    font-size:  30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:  white;
+    background-color: #ff6b63;
+    border-color: #ff6b63;
+
+}
+
+.reset_button:hover{
+    background-color: yellow;
+    color: #ff6b63;
+}
