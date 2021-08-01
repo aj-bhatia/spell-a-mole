@@ -96,7 +96,7 @@ function setRandomLetter(){
 }
 
 function molesPoppingUp() {
-    let time = setRandomTime(1000, 2000);
+    let time = setRandomTime(3000, 4000);
     let hole = setRandomHole();
     let word = hole.nextElementSibling;
     hole.classList.add('up');
@@ -148,7 +148,7 @@ timeUp = false;
  moleTimeOut;
  gameTimeOut;
  score = 0;
-time = 10; //10s game
+time = 60; //10s game
 //moles.forEach(mole => mole.addEventListener('click', whack));
 
     createScore();
@@ -164,7 +164,7 @@ time = 10; //10s game
     scoreboard.textContent = `Score: ${score}`;
     countDown();
     molesPoppingUp();
-    gameTimeOut = setTimeout(() => endGame(), 10000);
+    gameTimeOut = setTimeout(() => endGame(), 60000);
     inp.addEventListener('keyup', () => {
         //console.log("TEST NOW");
         var userInp = inp.value;
