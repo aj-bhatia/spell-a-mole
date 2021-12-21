@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spell-a-Mole!</title>
+    <link rel="icon" href="assets/moleicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+ 
+    <audio id = "backmusic" loop > 
+        <source src="background.mp3" type="audio/mp3">
+    </audio>
+    <audio id = "mole"> 
+        <source src="mole.wav" type="audio/wav">
+    </audio>
+    <audio id = "button"> 
+        <source src="button.wav" type="audio/wav">
+    </audio>
+    <audio id = "score"> 
+        <source src="score.wav" type="audio/wav">
+    </audio>
+    <audio id = "whack"> 
+        <source src="whack.wav" type="audio/wav">
+    </audio>
+
+
+    <div id="titleSpace">
+    <h1>
+        Spell-a-Mole
+    </h1>
+    <div id="audioButton"> Background Music: Off </div>
+    <div id="audioButton2"> SFX: On </div>
+  
+  </div>
+
+
+    
+    <div class = "pre_container"> </div>
+     <!--<h2 class="scoreboard">Score</h2>-->
+    <!--<h2 class="timer">Timer:</h2>-->
+
+    <div id="container"></div>
+    <div id="container_inp"></div>
+    <div class="start_game">
+    <button id="start_button"> Start Game</button>
+  </div>
+
+  <div class ="how_to">
+    <button id ="how_toButton"> How to Play</button>
+  </div>
+  <div id="chooseDifficulty"> <h3> Choose Difficulty: </h3> 
+  <div class ="easy">
+  <button id ="easy_button"> Easy</button>
+  </div>
+  <div class ="medium">
+  <button id ="medium_button"> Medium</button>
+  </div>
+  <div class ="hard">
+  <button id ="hard_button"> Hard</button>
+  </div>
+</div>
+    <script src="start.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
