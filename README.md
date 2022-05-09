@@ -1,6 +1,15 @@
-Thanks for checking out our game, Spell-a-Mole! We wanted to create a good and comfortable way for children to learn spelling and typing. By playing through our game, each child will gain an understanding of the keyboard and how to type on it, while also trying to write challenging words! Each difficulty is based on a different age group, so depending on the child’s age they will be getting words that are appropriate for their familiarity with a keyboard while also being similar to the their reading level. With each difficulty, we alter the size of the typical word and the difficulty of the word in terms of meaning. The way in which we created this system allows for a fun and engaging way to learn spelling and typing, while also helping children become more comfortable around words they may have never seen before! We hope you enjoy our game and help us find ways to improve it! 
+# Spell-A-Mole
+### This project was created by [@aj-bhatia](https://github.com/aj-bhatia), [@ItsDish](https://github.com/ItsDish), and [@amocz](https://github.com/amocz) during the 2021 The Odin Project Game Jam
 
-We all worked really hard on it and used each other’s different skill sets to touch as many facets as we could. We all worked together to brainstorm, code, and design our game so we’re all very excited for you to see it!
+#### Goals:
+Our goal while creating the game was to create an easy and comfortable way for children to learn spelling and typing. Our game uses repitition of words in order to help children better familiarize themselves with words, and their spellings, while also throwing in some more challenging words for them to begin to learn! Additionally, they will be able to gain familiarity with keyboards and typing while playing the game, so they will become better typers in the future!
+
+#### How Spell-A-Mole works:
+
+The game has three different modes, easy, medium, and hard. Each difficulty was created with the intention for different age ranges, so depending on the player's age, they will be able to see and type words that are appropriate for them, so that even older users will be able to learn as well! Additionally, the size and difficulty of words increase per difficulty, so this also is adjusted to how comfortable the user should be with a keyboard at this age range.
+
+How we created this system allows for a fun and engaging way to learn spelling and typing, while also helping children become more comfortable around words they may have never seen before!
+
 
 Game Jam Page:
 https://itch.io/jam/top-jam-1
